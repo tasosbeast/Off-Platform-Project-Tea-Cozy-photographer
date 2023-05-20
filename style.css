@@ -1,26 +1,42 @@
-*{
+* {
+    /* Reset margin and padding */
     margin: 0;
     padding: 0;
+    /* Use border-box for sizing */
     box-sizing: border-box;
 }
 
 body{
+  /* Font */
   font-family: 'Lato', sans-serif;
   font-size: 22px;
   color: seashell;
+  
+  /* Background */
   background-color: #3a3a3a;
+  
+  /* Margins and padding */
   margin: 0;
   padding: 0;
+  
+  /* Text */
   text-align: center;
 }
 
 nav img{
+    /* The width of the logo */
     width: 60px;
+    /* The height of the logo */
     height: auto;
+    /* Space between the logo and the nav links */
     margin: 5px 10px;
 }
 
 .container {
+    /* The navbar is a flex container with space between each item.
+       It is 69px high, has a border on the bottom, and is positioned
+       at the top of the page.
+    */
     display: flex;
     justify-content: space-between;
     height: 69px;
@@ -54,37 +70,42 @@ li a{
     height: 700px;
     text-align: center;
     background-image: url(images/jeff-hopper-iCtJF-A5hvs-unsplash.jpg);
-    background-size: contain;
+    background-size: contain; /* This is to ensure that the image is not stretched */
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1200px 700px;
-    margin: 0 50px;
+    background-position: center; /* This is to ensure that the image is at the center */
+    background-size: 1200px 700px; /* This is to ensure that the image is not stretched */
+    margin: 0 50px; /* This is to ensure that the image is not too close to the edge of the screen */
 }
 
 span{
-    color: #00BFBE;
+    color: #00BFBE; /*turquoise*/
     font-size: 30px;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-
+    text-shadow: 0 0 10px rgba(0,0,0,0.5); /*black*/
 }
 
-.hero div{
-    position: relative;
-    top: 350px;
-    background-color: #742D05;
+.hero div {
+    /* Center the content vertically */
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    /* Add padding around the content */
     padding: 10px;
-
+    /* Position the content */
+    position: relative;
+    top: 350px;
+    /* Make the background color darker */
+    background-color: #742D05;
 }
 
 .hero div h2 {
+    /* Add space below heading */
     margin-bottom: 15px; 
+    /* Set the color of the heading to blue */
     color: #00BBE6;
+    /* Set the font family to Arvo */
     font-family: 'Arvo';
 }
 
@@ -99,6 +120,7 @@ span{
 }
 
 .featured h2{
+    /* This is a margin for the h2 */
     margin: 50px;
     border-bottom: 1px solid seashell;
     border-radius: 120px;
@@ -108,6 +130,7 @@ span{
 }
 
 .featured ul{
+    /* Display items in a flexbox with some spacing in between */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -122,7 +145,9 @@ span{
     font-size: 15px;
 }
 
-.featured ul li img{
+/* Make the images in the featured section of the homepage bigger */
+.featured ul li img {
+    /* Make the images bigger */
     width: 250px;
     height: auto;
     margin-bottom: 10px;
@@ -130,7 +155,8 @@ span{
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 
-.about_me{
+/* This is the background image for the about me section */
+.about_me {
     background-image: url(images/OIG.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -141,23 +167,30 @@ span{
     
 }
 .about_me h2{
+    /*make the header look nice*/
     margin-bottom: 20px;
     border-bottom: 1px solid seashell;
     color: white;
+    /*make the header look nice*/
     border-radius: 120px;
     padding: 10px;
     font-family: 'Arvo';
 }
 
+/* This is the info box on the home page. It's meant to be a brief introduction to the site.
+// It's a div with the class "info".*/
+
+
 .info{
-    position: relative;
-    top: 40px;
-    width: 300px;
-    height: 300px;
-    background-color: #742D05;
-    margin: auto;
+    position: relative; /* type: position */
+    top: 40px; /* type: distance */
+    width: 300px; /* type: size */
+    height: 300px; /* type: size */
+    background-color: #742D05; /* type: color */
+    margin: auto; /* type: position */
 }
 
+/* This is the footer, which is the bottom of the page. */
 footer{
     background-color: #000000;
     height: 200px;
@@ -169,6 +202,7 @@ footer{
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+/* These are the headings in the footer. */
 footer h2{
     margin: 20px;
     padding: 10px;
@@ -181,6 +215,7 @@ footer h5{
     font-family: 'Arvo';
 }
 
+/* This is the text on the left side of the footer. */
 .rights{
     text-align: left;
 
